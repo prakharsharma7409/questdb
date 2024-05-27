@@ -61,7 +61,7 @@ public class AbsBenchmark {
 
     @Benchmark
     public int testXor() {
-        int y = x >>> 31;
+        int y = x >> 31;
         return (x ^ y) - y;
     }
 }
